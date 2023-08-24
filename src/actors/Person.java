@@ -1,3 +1,5 @@
+package actors;
+
 public abstract class Person {
     protected String name, type;
     protected int age, id;
