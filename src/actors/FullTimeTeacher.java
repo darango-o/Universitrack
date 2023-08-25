@@ -3,7 +3,7 @@ package actors;
 public class FullTimeTeacher extends Teacher{
     int experienceYears;
 
-    FullTimeTeacher(String name, int age, int id, double baseSalary, int experienceYears){
+    public FullTimeTeacher(String name, int age, int id, double baseSalary, int experienceYears){
         super(name, age, id, baseSalary);
         this.experienceYears = experienceYears;
         this.salary = calculateSalary();

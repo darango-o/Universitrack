@@ -16,4 +16,8 @@ public abstract class Person {
     public String formatting(){
       return String.format("Type: %s\tId: %d\tName: %s\tAge: %d years old", type, id, name, age);
     }
+
+    public int getId(){
+        return id;
+    }
 }
