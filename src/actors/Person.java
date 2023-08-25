@@ -14,6 +14,6 @@ public abstract class Person {
     public abstract String toString();
 
     public String formatting(){
-      return String.format("\nType: %s\tId: %d\tName: %s\tAge: %d years old", type, id, name, age);
-    };
+      return String.format("Type: %s\tId: %d\tName: %s\tAge: %d years old", type, id, name, age);
+    }
 }
