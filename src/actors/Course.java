@@ -40,7 +40,7 @@ public class Course {
     }
 
     public String toString(){
-        return String.format("\nId: %s\tName: %s\tClassroom: %s\tTeacher assigned: %b", id, name, classroom, hasTeacher);
+        return String.format("Id: %s\tName: %s\tClassroom: %s\tTeacher assigned: %b\n", id, name, classroom, hasTeacher);
     }
 
     public String detailedInfo(){
