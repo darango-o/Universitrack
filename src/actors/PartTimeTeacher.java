@@ -16,6 +16,6 @@ public class PartTimeTeacher extends Teacher {
 
     @Override
     public String toString(){
-        return formatting() + "\tWeekly Hours: " + activeWeeklyHours;
+        return formatting() + "\tWeekly Hours: " + activeWeeklyHours + "\n";
     }
 }

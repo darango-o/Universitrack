@@ -22,7 +22,7 @@ class FullTimeTeacherTest {
 
     @Test
     void testToString() {
-        String expected = "\nType: Teacher\tId: 1002\tName: John\tAge: 54 years old\tExp. Years: 7";
+        String expected = "Type: Teacher\tId: 1002\tName: John\tAge: 54 years old\tExp. Years: 7\n";
         String result = teacher.toString();
         assertEquals(expected, result);
     }

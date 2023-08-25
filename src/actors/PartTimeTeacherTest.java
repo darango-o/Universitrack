@@ -24,7 +24,7 @@ class PartTimeTeacherTest {
 
     @Test
     void testToString() {
-        String expected = "\nType: Teacher\tId: 1003\tName: Doe\tAge: 54 years old\tWeekly Hours: 7.5";
+        String expected = "Type: Teacher\tId: 1003\tName: Doe\tAge: 54 years old\tWeekly Hours: 7.5\n";
         String result = teacher.toString();
         assertEquals(expected, result);
     }

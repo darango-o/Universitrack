@@ -16,7 +16,7 @@ public class FullTimeTeacher extends Teacher{
 
     @Override
     public String toString(){
-        return formatting() + "\tExp. Years: " + experienceYears;
+        return formatting() + "\tExp. Years: " + experienceYears + "\n";
     }
 
 }
