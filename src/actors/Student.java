@@ -1,7 +1,7 @@
 package actors;
 
 public class Student extends Person {
-    Student(String name, int age, int id){
+    public Student(String name, int age, int id){
         super(name, age, id, "Student");
     }
 
@@ -9,4 +9,6 @@ public class Student extends Person {
     public String toString(){
         return formatting() + "\n";
     }
+
+
 }

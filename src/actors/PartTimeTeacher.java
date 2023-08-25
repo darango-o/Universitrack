@@ -3,7 +3,7 @@ package actors;
 public class PartTimeTeacher extends Teacher {
     double activeWeeklyHours;
 
-    PartTimeTeacher(String name, int age, int id, double baseSalary, double activeWeeklyHours){
+    public PartTimeTeacher(String name, int age, int id, double baseSalary, double activeWeeklyHours){
         super(name, age, id, baseSalary);
         this.activeWeeklyHours = activeWeeklyHours;
         this.salary = calculateSalary();

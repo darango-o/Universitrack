@@ -61,4 +61,8 @@ public class Course {
     public ArrayList<Person> getMembers() {
         return members;
     }
+
+    public String getId(){
+        return id;
+    }
 }
