@@ -66,7 +66,7 @@ class CourseTest {
 
     @Test
     void testToString() {
-        String expected = "\nId: mat-301\tName: math\tClassroom: 301\tTeacher assigned: false";
+        String expected = "Id: mat-301\tName: math\tClassroom: 301\tTeacher assigned: false\n";
         String result = course.toString();
         assertEquals(expected, result);
     }
@@ -77,7 +77,7 @@ class CourseTest {
         course.enrollStudent(student1);
         course.enrollStudent(student2);
 
-        String expected = "\nId: mat-301\tName: math\tClassroom: 301\tTeacher assigned: true\nType: Teacher\tId: 1002\tName: John\tAge: 54 years old\tExp. Years: 7\nType: Student\tId: 1001\tName: Alice\tAge: 19 years old\nType: Student\tId: 1000\tName: Mike\tAge: 23 years old";
+        String expected = "Id: mat-301\tName: math\tClassroom: 301\tTeacher assigned: true\nType: Teacher\tId: 1002\tName: John\tAge: 54 years old\tExp. Years: 7\nType: Student\tId: 1001\tName: Alice\tAge: 19 years old\nType: Student\tId: 1000\tName: Mike\tAge: 23 years old\n";
         String result = course.detailedInfo();
         assertEquals(expected, result);
     }

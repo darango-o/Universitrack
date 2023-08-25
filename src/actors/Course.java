@@ -6,9 +6,9 @@ public class Course {
     final String name, id;
     final int classroom;
     private boolean hasTeacher = false;
-    private ArrayList<Person> members = new ArrayList<Person>();
+    private final ArrayList<Person> members = new ArrayList<>();
 
-    Course(String name, int classroom){
+    public Course(String name, int classroom){
         this.name = name;
         this.classroom = classroom;
         this.id = name.substring(0,3)+"-"+classroom;
@@ -40,13 +40,13 @@ public class Course {
     }
 
     public String toString(){
-        return String.format("\nId: %s\tName: %s\tClassroom: %s\tTeacher assigned: %b", id, name, classroom, hasTeacher);
+        return String.format("Id: %s\tName: %s\tClassroom: %s\tTeacher assigned: %b\n", id, name, classroom, hasTeacher);
     }
 
     public String detailedInfo(){
         StringBuilder details = new StringBuilder();
 
-        details.append(toString());
+        details.append(this);
         for(Person person : members){
             details.append(person.toString());
         }
