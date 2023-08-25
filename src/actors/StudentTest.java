@@ -16,7 +16,7 @@ class StudentTest {
 
     @Test
     void testToString() {
-        String expected = "\nType: Student\tId: 1001\tName: John\tAge: 23 years old";
+        String expected = "Type: Student\tId: 1001\tName: John\tAge: 23 years old\n";
         String result = student.toString();
         assertEquals(expected, result);
     }
