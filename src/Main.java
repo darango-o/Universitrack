@@ -16,9 +16,9 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         University university = new University(courses, students, teachers);
 
-        System.out.println("Bienvenido a Universitrack.");
+        System.out.println("Welcome to Universitrack.");
         do {
-            System.out.println("\nMarque el número con la opción que desee: \n1. Listar profesores.\n2. Crear profesores.\n3. Listar clases.\n4. Create new student.\n5. Create new class.\n6. List student(id) classes.\n0. Salir.");
+            System.out.println("\nSelect the option that you need: \n1. List teachers.\n2. Create teacher.\n3. List courses.\n4. Create new student.\n5. Create new class.\n6. List student(id) classes.\n0. Exit.");
             choice = scan.nextInt();
             switch (choice) {
                 case 1 -> university.listTeachers();
